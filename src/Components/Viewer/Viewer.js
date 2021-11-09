@@ -22,7 +22,12 @@ function Viewer(props) {
   //Slet index =
   return (
     <div id={"viewer"}>
-      <h3>ID: {location}</h3>
+      <Link id="close" to={"/"}>
+        Close
+      </Link>
+      <h3>
+        {location + 1}/{length}
+      </h3>
       <span>{props.portfolio[id].description}</span>
       {prevLink ? (
         <button id="prev">

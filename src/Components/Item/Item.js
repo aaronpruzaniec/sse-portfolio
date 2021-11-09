@@ -5,6 +5,7 @@ import {
   Link,
   useParams,
 } from "react-router-dom";
+import Bubbles from "../Bubbles/Bubbles";
 
 import "./Item.scss";
 
@@ -21,6 +22,11 @@ function Item(props) {
         <p>
           {props.piece.year} - {props.piece.description}
         </p>
+        <div className={"bubbles"}>
+          {props.piece.tags.map((tag) => (
+            <Bubbles tag={tag} />
+          ))}
+        </div>
       </Link>
     </div>
   );
