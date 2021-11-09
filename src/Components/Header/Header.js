@@ -8,9 +8,9 @@ import {
 
 function Header(props) {
   return (
-    <li>
+    <div>
       <Link to={props.piece.thumbnail}>{props.piece.name}</Link>
-    </li>
+    </div>
   );
 }
 

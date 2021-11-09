@@ -145,18 +145,21 @@ function App() {
       name: "JT Sports",
       thumbnail: "jt_sports",
       description: "Catalog for paintball products",
-      link: "../jtsports/index.html",
+      link: "http://pruzaniec.com/jtsports/",
       year: "2010",
       tags: ["ui", "ux"],
     },
   };
   return (
     <Router>
-      {Object.entries(portfolio).map((piece) => (
-        <Header piece={piece[1]} />
-      ))}
+      <div id="items">
+        {Object.entries(portfolio).map((piece) => (
+          <Item piece={piece[1]} />
+        ))}
+      </div>
+
       <div className="App">
-        <header className="App-header">
+        <header>
           <Switch>
             <Route path="/:id" children={<Viewer portfolio={portfolio} />} />
           </Switch>

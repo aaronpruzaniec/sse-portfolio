@@ -6,12 +6,23 @@ import {
   useParams,
 } from "react-router-dom";
 
-function Item() {
-  let { id } = useParams();
+import "./Item.scss";
+
+function Item(props) {
+  let cdn = "https://www.pruzaniec.com/portfolio-non-react/local-cdn/";
   return (
-    <ul>
-      <h3>ID: {id}</h3>
-    </ul>
+    <div className={"item"}>
+      <Link to={props.piece.thumbnail}>
+        <img
+          alt={props.piece.name}
+          src={cdn + props.piece.thumbnail + ".jpg"}
+        />
+        <h3>{props.piece.name}</h3>
+        <p>
+          {props.piece.year} - {props.piece.description}
+        </p>
+      </Link>
+    </div>
   );
 }
 

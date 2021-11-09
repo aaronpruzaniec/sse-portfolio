@@ -1,0 +1,19 @@
+h3 {
+  line-height: 1;
+}
+p {
+  margin: 1em 0 2em 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color: rgb(92, 92, 92);
+}
+.item {
+  break-inside: avoid-column;
+  img {
+    width: 100%;
+  }
+}
