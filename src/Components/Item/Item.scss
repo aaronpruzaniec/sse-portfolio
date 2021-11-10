@@ -1,0 +1,28 @@
+h3 {
+  line-height: 1;
+}
+p {
+  margin: 1em 0 1em 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #aeffba;
+}
+.item {
+  break-inside: avoid-column;
+  img {
+    width: 100%;
+  }
+}
+.bubbles {
+  margin-bottom: 3em;
+}
+
+.imgOuter {
+  // width: 100%;
+  // padding-top: 75%;
+  img {
+  }
+}
