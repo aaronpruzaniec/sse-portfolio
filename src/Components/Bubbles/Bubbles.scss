@@ -1,9 +1,16 @@
 .bubble {
   display: inline-block;
   margin-right: 0.5em;
-  background-color: #000;
-  color: #fff;
+  background-color: #dfffe4;
+  color: #010010;
   border-radius: 0.75rem;
   padding: 0.15em 0.75em;
   font-size: 0.55rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+a:hover {
+  .bubble {
+    background-color: #aeffba;
+  }
 }

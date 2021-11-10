@@ -1,25 +1,25 @@
 iframe {
   width: 100%;
-  height: 1000px;
   background-color: #fff;
+  border-width: 0;
+  height: 100%;
 }
 #prev {
   float: left;
-  color: #fff;
 }
 #next {
   float: right;
-  color: #fff;
 }
 #viewer {
   position: fixed;
   top: 0px;
   left: 0px;
   width: 100%;
-  background-color: #fff;
+  background-color: #010010;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 }
-#close {
-  position: absolute;
-  top: 0px;
-  right: 0px;
+#viewerHeader {
+  padding: 0.5rem;
 }

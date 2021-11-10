@@ -22,23 +22,25 @@ function Viewer(props) {
   //Slet index =
   return (
     <div id={"viewer"}>
-      <Link id="close" to={"/"}>
-        Close
-      </Link>
-      <h3>
-        {location + 1}/{length}
-      </h3>
-      <span>{props.portfolio[id].description}</span>
-      {prevLink ? (
-        <button id="prev">
-          <Link to={prevLink}>{"⬅️"}</Link>
-        </button>
-      ) : null}
-      {nextLink ? (
-        <button id="next">
-          <Link to={nextLink}>{"➡️"}</Link>
-        </button>
-      ) : null}
+      <div id="viewerHeader">
+        <span>
+          {props.portfolio[id].year} — {props.portfolio[id].description} (
+          <Link id="close" to={"/"}>
+            Close
+          </Link>
+          )
+        </span>
+        {prevLink ? (
+          <Link id="prev" to={prevLink}>
+            {"🠐 Previous "}({location})
+          </Link>
+        ) : null}
+        {nextLink ? (
+          <Link id="next" to={nextLink}>
+            ({length - location - 1}){" Next 🠒"}
+          </Link>
+        ) : null}
+      </div>
       <iframe title={id} src={props.portfolio[id].link}></iframe>
     </div>
   );

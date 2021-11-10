@@ -1,25 +1,26 @@
 //import logo from "./logo.svg";
-import "./App.css";
-import Header from "./Components/Header/Header";
+import "./App.scss";
 import Item from "./Components/Item/Item";
 import Viewer from "./Components/Viewer/Viewer";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useParams,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   const portfolio = {
+    lwv: {
+      name: "League of Women Voters",
+      thumbnail: "lwv",
+      description: "Official website for the Philadelphia chapter",
+      link: "https://lwvphilly.org/",
+      year: "2020",
+      tags: ["javascript", "html", "ui", "ux", "responsive"],
+    },
     become_an_affiliate: {
       name: "Become an Affiliate",
       thumbnail: "become_an_affiliate",
       description: "Randomly generated fly in animation",
       link: "http://pruzaniec.com/portfolio-non-react/gwynniebee/pages_v6/become_an_affiliate",
       year: "2018",
-      tags: ["javascript", "html", "landingPage", "responsive"],
+      tags: ["javascript", "html", "landing page", "responsive"],
     },
     how_it_works: {
       name: "How It Works",
@@ -27,7 +28,7 @@ function App() {
       description: "Buttons transform into a modal",
       link: "http://pruzaniec.com/portfolio-non-react/gwynniebee/pages_v6/how_it_works/",
       year: "2018",
-      tags: ["javascript", "html", "landingPage", "responsive"],
+      tags: ["javascript", "html", "landing page", "responsive"],
     },
     sun_kissed_style_lookbook: {
       name: "Sun Kissed Style Lookbook",
@@ -35,7 +36,7 @@ function App() {
       description: "Details scale effortlessly, loads fast",
       link: "http://pruzaniec.com/portfolio-non-react/gwynniebee/pages/sun_kissed_style_lookbook",
       year: "2017",
-      tags: ["javascript", "html", "landingPage", "responsive"],
+      tags: ["javascript", "html", "landing page", "responsive"],
     },
     summer_lookbook_2017: {
       name: "Summer Lookbook 2017",
@@ -43,7 +44,7 @@ function App() {
       description: "Tight shoot with 24-hour turnaround",
       link: "http://pruzaniec.com/portfolio-non-react/gwynniebee/pages/summer_lookbook_2017",
       year: "2017",
-      tags: ["javascript", "html", "landingPage", "responsive"],
+      tags: ["javascript", "html", "landing page", "responsive"],
     },
     tracy_reese_lookbook: {
       name: "Tracy Reese Lookbook",
@@ -51,15 +52,7 @@ function App() {
       description: "Exclusive collaboration",
       link: "http://pruzaniec.com/portfolio-non-react/gwynniebee/pages/tracy_reese_lookbook",
       year: "2017",
-      tags: ["javascript", "html", "landingPage", "responsive"],
-    },
-    sean_patrick_wayland: {
-      name: "Sean Patrick Wayland",
-      thumbnail: "sean_patrick_wayland",
-      description: "Campaign for PA State House",
-      link: "https://www.spwayland.net/",
-      year: "2017",
-      tags: ["javascript", "html", "responsive", "ui", "ux"],
+      tags: ["javascript", "html", "landing page", "responsive"],
     },
     spring_lookbook_2017: {
       name: "Spring Lookbook 2017",
@@ -67,7 +60,7 @@ function App() {
       description: "Road trip inspired photo shoot",
       link: "http://pruzaniec.com/portfolio-non-react/gwynniebee/pages/spring_lookbook_2017",
       year: "2016",
-      tags: ["javascript", "html", "landingPage", "responsive"],
+      tags: ["javascript", "html", "landing page", "responsive"],
     },
     slot_machine: {
       name: "Slot Machine",
@@ -75,7 +68,7 @@ function App() {
       description: "Optimized page with 3D animation",
       link: "http://pruzaniec.com/portfolio-non-react/gwynniebee/pages/slot_machine",
       year: "2016",
-      tags: ["javascript", "html", "landingPage", "responsive"],
+      tags: ["javascript", "html", "landing page", "responsive"],
     },
     party_perfect_lookbook: {
       name: "Party Perfect Lookbook",
@@ -83,7 +76,7 @@ function App() {
       description: "Shot and coded in half a week",
       link: "http://pruzaniec.com/portfolio-non-react/gwynniebee/pages/party_perfect_lookbook",
       year: "2016",
-      tags: ["javascript", "html", "landingPage", "responsive"],
+      tags: ["javascript", "html", "landing page", "responsive"],
     },
     unlimited_fashion_e: {
       name: "Unlimited Fashion",
@@ -91,15 +84,7 @@ function App() {
       description: "Landing page for Facebook ads",
       link: "http://pruzaniec.com/portfolio-non-react/gwynniebee/pages/unlimited_fashion_e",
       year: "2015",
-      tags: ["javascript", "html", "landingPage", "responsive"],
-    },
-    nexus_properties: {
-      name: "Nexus Properties",
-      thumbnail: "nexus_properties",
-      description: "Real Estate Homepage prototype",
-      link: "http://pruzaniec.com/nexus-properties",
-      year: "2014",
-      tags: ["javascript", "html", "responsive", "ui", "ux"],
+      tags: ["javascript", "html", "landing page", "responsive"],
     },
     philips_bulb_finder: {
       name: "Philips Bulb Finder",
@@ -152,6 +137,17 @@ function App() {
   };
   return (
     <Router>
+      <header>
+        <div id={"name"}>
+          <h1>Aaron Pruzaniec</h1>
+          <h2>Senior Software Engineer</h2>
+          <div id={"links"}>
+            <a href="//github.com/aaronpruzaniec/sse-portfolio">GitHub</a>
+            <span class="bul"> | </span>
+            <a href="mailto:aaronpruzaniec@gmail.com">Contact</a>
+          </div>
+        </div>
+      </header>
       <div id="items">
         {Object.entries(portfolio).map((piece) => (
           <Item piece={piece[1]} />
@@ -159,11 +155,9 @@ function App() {
       </div>
 
       <div className="App">
-        <header>
-          <Switch>
-            <Route path="/:id" children={<Viewer portfolio={portfolio} />} />
-          </Switch>
-        </header>
+        <Switch>
+          <Route path="/:id" children={<Viewer portfolio={portfolio} />} />
+        </Switch>
       </div>
     </Router>
   );

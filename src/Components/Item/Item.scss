@@ -6,10 +6,9 @@ p {
 }
 a {
   text-decoration: none;
-  color: #000;
 }
 a:hover {
-  color: rgb(92, 92, 92);
+  color: #aeffba;
 }
 .item {
   break-inside: avoid-column;
@@ -19,4 +18,11 @@ a:hover {
 }
 .bubbles {
   margin-bottom: 3em;
+}
+
+.imgOuter {
+  // width: 100%;
+  // padding-top: 75%;
+  img {
+  }
 }
