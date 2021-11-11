@@ -6,14 +6,22 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   const portfolio = {
-    // lwv: {
-    //   name: "League of Women Voters",
-    //   thumbnail: "lwv",
-    //   description: "Official website for the Philadelphia chapter",
-    //   link: "https://lwvphilly.org/",
-    //   year: "2020",
-    //   tags: ["javascript", "html", "ui", "ux", "responsive"],
+    // elsevier_artifact: {
+    //   name: "Elsevier Artifact Page",
+    //   thumbnail: "elsevier_artifact",
+    //   description: "Metrics for Lancet article about coronavirus",
+    //   link: "//plu.mx/plum/a/?doi=10.1016/S0140-6736(20)30185-9",
+    //   year: "2021",
+    //   tags: ["javascript", "html", "ui", "ux"],
     // },
+    lwv: {
+      name: "League of Women Voters",
+      thumbnail: "lwv",
+      description: "Official website for the Philadelphia chapter",
+      link: "https://lwvphilly.org/",
+      year: "2020",
+      tags: ["javascript", "html", "ui", "ux", "responsive"],
+    },
     become_an_affiliate: {
       name: "Become an Affiliate",
       thumbnail: "become_an_affiliate",
