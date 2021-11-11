@@ -12,7 +12,7 @@ function App() {
     //   description: "Metrics for Lancet article about coronavirus",
     //   link: "//plu.mx/plum/a/?doi=10.1016/S0140-6736(20)30185-9",
     //   year: "2021",
-    //   tags: ["javascript", "html", "ui", "ux"],
+    //   tags: ["javascript", "html", "design"],
     // },
     lwv: {
       name: "League of Women Voters",
@@ -20,7 +20,7 @@ function App() {
       description: "Official website for the Philadelphia chapter",
       link: "https://lwvphilly.org/",
       year: "2020",
-      tags: ["javascript", "html", "ui", "ux", "responsive"],
+      tags: ["javascript", "html", "design", "responsive"],
     },
     become_an_affiliate: {
       name: "Become an Affiliate",
@@ -100,7 +100,7 @@ function App() {
       description: "Built from relational SQL tables",
       link: "//pruzaniec.com/bulbfinder/selector.php",
       year: "2014",
-      tags: ["html", "ui", "ux"],
+      tags: ["html", "design"],
     },
     philips_bike_light: {
       name: "Philips Bike Light",
@@ -108,7 +108,7 @@ function App() {
       description: "First featuring 2x graphics",
       link: "//pruzaniec.com/philipsbikelight",
       year: "2014",
-      tags: ["html", "ui", "ux"],
+      tags: ["html", "design"],
     },
     vdo_redi_sensor: {
       name: "VDO REDI-Sensor",
@@ -116,7 +116,7 @@ function App() {
       description: "Informative page for tire sensors",
       link: "//pruzaniec.com/vdoredisensor",
       year: "2013",
-      tags: ["html", "ui", "ux"],
+      tags: ["html", "design"],
     },
     vdo_roadlog: {
       name: "VDO RoadLog",
@@ -124,7 +124,7 @@ function App() {
       description: "Product for logging truck hauls",
       link: "//pruzaniec.com/vdoroadlog",
       year: "2013",
-      tags: ["html", "ui", "ux"],
+      tags: ["html", "design"],
     },
     philips_gopure: {
       name: "Philips GoPure",
@@ -132,7 +132,7 @@ function App() {
       description: "Automotive air filter",
       link: "//pruzaniec.com/philipsgopure",
       year: "2013",
-      tags: ["html", "ui", "ux"],
+      tags: ["html", "design"],
     },
     jt_sports: {
       name: "JT Sports",
@@ -140,7 +140,7 @@ function App() {
       description: "Catalog for paintball products",
       link: "//pruzaniec.com/jtsports/",
       year: "2010",
-      tags: ["ui", "ux"],
+      tags: ["design"],
     },
   };
   return (
