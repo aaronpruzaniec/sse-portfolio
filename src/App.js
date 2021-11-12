@@ -6,14 +6,14 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   const portfolio = {
-    // elsevier_artifact: {
-    //   name: "Elsevier Artifact Page",
-    //   thumbnail: "elsevier_artifact",
-    //   description: "Metrics for Lancet article about coronavirus",
-    //   link: "//plu.mx/plum/a/?doi=10.1016/S0140-6736(20)30185-9",
-    //   year: "2021",
-    //   tags: ["javascript", "html", "design"],
-    // },
+    elsevier_artifact: {
+      name: "Elsevier Artifact Page",
+      thumbnail: "elsevier_artifact",
+      description: "Metrics for Lancet article about coronavirus",
+      link: "//pruzaniec.com/elsevier-artifact-page/",
+      year: "2021",
+      tags: ["javascript", "html", "design"],
+    },
     lwv: {
       name: "League of Women Voters",
       thumbnail: "lwv",

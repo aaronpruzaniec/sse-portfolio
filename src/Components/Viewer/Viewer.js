@@ -18,7 +18,8 @@ function Viewer(props) {
     <div id={"viewer"}>
       <div id="viewerHeader">
         <span>
-          {props.portfolio[id].year} — {props.portfolio[id].description} (
+          {props.portfolio[id].year} — {props.portfolio[id].name}:{" "}
+          {props.portfolio[id].description} (
           <Link id="close" to={"/"}>
             Close
           </Link>
