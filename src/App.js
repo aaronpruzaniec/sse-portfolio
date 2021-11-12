@@ -46,14 +46,6 @@ function App() {
       year: "2017",
       tags: ["javascript", "html", "landing page", "responsive"],
     },
-    summer_lookbook_2017: {
-      name: "Summer Lookbook 2017",
-      thumbnail: "summer_lookbook_2017",
-      description: "Tight shoot with 24-hour turnaround",
-      link: "//pruzaniec.com/portfolio-non-react/gwynniebee/pages/summer_lookbook_2017",
-      year: "2017",
-      tags: ["javascript", "html", "landing page", "responsive"],
-    },
     tracy_reese_lookbook: {
       name: "Tracy Reese Lookbook",
       thumbnail: "tracy_reese_lookbook",
