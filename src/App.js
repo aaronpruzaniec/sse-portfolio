@@ -12,7 +12,7 @@ function App() {
       description: "Metrics for Lancet article about coronavirus",
       link: "//pruzaniec.com/elsevier-artifact-page/",
       year: "2021",
-      tags: ["javascript", "html", "design"],
+      tags: ["javascript", "html", "design", "responsive"],
     },
     lwv: {
       name: "League of Women Voters",
@@ -144,7 +144,7 @@ function App() {
           <div id={"links"}>
             <a href="//github.com/aaronpruzaniec/sse-portfolio">GitHub</a>
             <span class="bul"> | </span>
-            <a href="mailto:aaronpruzaniec@gmail.com">Contact</a>
+            <a href="mailto:aaronpruzaniec@protonmail.com">Contact</a>
           </div>
         </div>
       </header>
