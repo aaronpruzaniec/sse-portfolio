@@ -6,14 +6,22 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   const portfolio = {
-    // lwv: {
-    //   name: "League of Women Voters",
-    //   thumbnail: "lwv",
-    //   description: "Official website for the Philadelphia chapter",
-    //   link: "https://lwvphilly.org/",
-    //   year: "2020",
-    //   tags: ["javascript", "html", "ui", "ux", "responsive"],
-    // },
+    elsevier_artifact: {
+      name: "Elsevier Artifact Page",
+      thumbnail: "elsevier_artifact",
+      description: "Metrics for Lancet article about coronavirus",
+      link: "//pruzaniec.com/elsevier-artifact-page/",
+      year: "2021",
+      tags: ["javascript", "html", "design"],
+    },
+    lwv: {
+      name: "League of Women Voters",
+      thumbnail: "lwv",
+      description: "Official website for the Philadelphia chapter",
+      link: "https://lwvphilly.org/",
+      year: "2020",
+      tags: ["javascript", "html", "design", "responsive"],
+    },
     become_an_affiliate: {
       name: "Become an Affiliate",
       thumbnail: "become_an_affiliate",
@@ -92,7 +100,7 @@ function App() {
       description: "Built from relational SQL tables",
       link: "//pruzaniec.com/bulbfinder/selector.php",
       year: "2014",
-      tags: ["html", "ui", "ux"],
+      tags: ["html", "design"],
     },
     philips_bike_light: {
       name: "Philips Bike Light",
@@ -100,7 +108,7 @@ function App() {
       description: "First featuring 2x graphics",
       link: "//pruzaniec.com/philipsbikelight",
       year: "2014",
-      tags: ["html", "ui", "ux"],
+      tags: ["html", "design"],
     },
     vdo_redi_sensor: {
       name: "VDO REDI-Sensor",
@@ -108,7 +116,7 @@ function App() {
       description: "Informative page for tire sensors",
       link: "//pruzaniec.com/vdoredisensor",
       year: "2013",
-      tags: ["html", "ui", "ux"],
+      tags: ["html", "design"],
     },
     vdo_roadlog: {
       name: "VDO RoadLog",
@@ -116,7 +124,7 @@ function App() {
       description: "Product for logging truck hauls",
       link: "//pruzaniec.com/vdoroadlog",
       year: "2013",
-      tags: ["html", "ui", "ux"],
+      tags: ["html", "design"],
     },
     philips_gopure: {
       name: "Philips GoPure",
@@ -124,7 +132,7 @@ function App() {
       description: "Automotive air filter",
       link: "//pruzaniec.com/philipsgopure",
       year: "2013",
-      tags: ["html", "ui", "ux"],
+      tags: ["html", "design"],
     },
     jt_sports: {
       name: "JT Sports",
@@ -132,7 +140,7 @@ function App() {
       description: "Catalog for paintball products",
       link: "//pruzaniec.com/jtsports/",
       year: "2010",
-      tags: ["ui", "ux"],
+      tags: ["design"],
     },
   };
   return (

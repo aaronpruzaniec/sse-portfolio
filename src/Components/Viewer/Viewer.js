@@ -1,11 +1,5 @@
 import "./Viewer.css";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useParams,
-} from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function Viewer(props) {
   let { id } = useParams(),
@@ -24,7 +18,8 @@ function Viewer(props) {
     <div id={"viewer"}>
       <div id="viewerHeader">
         <span>
-          {props.portfolio[id].year} — {props.portfolio[id].description} (
+          {props.portfolio[id].year} — {props.portfolio[id].name}:{" "}
+          {props.portfolio[id].description} (
           <Link id="close" to={"/"}>
             Close
           </Link>
@@ -32,12 +27,12 @@ function Viewer(props) {
         </span>
         {prevLink ? (
           <Link id="prev" to={prevLink}>
-            {"🠐 Previous "}({location})
+            {"< Previous "}({location})
           </Link>
         ) : null}
         {nextLink ? (
           <Link id="next" to={nextLink}>
-            ({length - location - 1}){" Next 🠒"}
+            ({length - location - 1}){" Next >"}
           </Link>
         ) : null}
       </div>
